@@ -20,8 +20,10 @@ Follow these steps to set up and run the Multiplayer Tic-Tac-Toe (C++ & WebAssem
 1️⃣ Clone the Repository
 First, download the project by cloning the GitHub repository:
 
-git clone https://github.com/yourusername/Multiplayer-TicTacToe.git
-cd Multiplayer-TicTacToe
+git clone https://github.com/anjalig2309/Multiplayer-Tic-Tac-Toe-Cpp-WebAssembly-.git
+
+cd Multiplayer-Tic-Tac-Toe-C-WebAssembly-
+
 
 2️⃣ Install Emscripten
 If you haven’t installed Emscripten yet, follow the official installation guide: Emscripten Setup
