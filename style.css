@@ -1,12 +1,88 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     text-align: center;
-    margin-top: 50px;
+    margin: 0;
+    padding: 0;
 }
-h1 { color: #333; }
-pre {
-    background: #f4f4f4;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 5px;
+
+/* Game Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Title */
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Board Styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+/* Player Info */
+#player-info {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Buttons */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+    }
+
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5rem;
+    }
 }
